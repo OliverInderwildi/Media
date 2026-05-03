@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b4d8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9b5de5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f72585;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="120" rx="8" fill="#1a1a2e"/>
+  <text x="20" y="35" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="url(#grad)" letter-spacing="1.5" text-transform="uppercase">THE FESTIVAL</text>
+  <text x="20" y="58" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#ffffff" letter-spacing="0.5">OF CIRCULAR</text>
+  <text x="20" y="82" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#ffffff" letter-spacing="0.5">ECONOMY.</text>
+  <circle cx="250" cy="60" r="35" fill="none" stroke="url(#grad)" stroke-width="3"/>
+  <path d="M 235 45 Q 250 35, 265 45 Q 275 55, 265 70 Q 255 80, 240 72 Q 230 65, 235 50" fill="none" stroke="url(#grad)" stroke-width="2" stroke-linecap="round"/>
+</svg>

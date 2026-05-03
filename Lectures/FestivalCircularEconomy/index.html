@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary SEO ── -->
+  <title>Intelligent Decarbonisation — Festival of the Circular Economy Lecture | Dr. Oliver Inderwildi</title>
+  <meta name="description" content="Dr. Oliver Inderwildi presents his book 'Intelligent Decarbonisation' at the Festival of the Circular Economy, exploring how AI and circular principles can accelerate the transition to net zero." />
+  <meta name="keywords" content="Oliver Inderwildi, Intelligent Decarbonisation, circular economy, Festival of the Circular Economy, net zero, AI, sustainability, Springer" />
+  <meta name="author" content="Oliver Inderwildi" />
+  <link rel="canonical" href="https://oliverinderwildi.github.io/Media/Lectures/FestivalCircularEconomy/" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Intelligent Decarbonisation — Lecture at the Festival of the Circular Economy" />
+  <meta property="og:description" content="Dr. Oliver Inderwildi on how artificial intelligence and circular economy principles can drive industrial decarbonisation." />
+  <meta property="og:url" content="https://oliverinderwildi.github.io/Media/Lectures/FestivalCircularEconomy/" />
+  <meta property="og:locale" content="en_GB" />
+
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- ── Google Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- ── Google Analytics ── -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MWNCQB0SMG"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TMZL17ZBR3');</script>
+
+  <style>
+:root {
+  --bg: #0a0a0f;
+  --bg-card: #12121a;
+  --bg-elevated: #1a1a25;
+  --text: #e8e6e1;
+  --text-dim: #9a978f;
+  --text-muted: #6b6860;
+  --accent: #5b8a72;
+  --accent-dim: rgba(91,138,114,0.15);
+  --gold: #b8922a;
+  --gold-pale: rgba(184,146,42,0.12);
+  --rule: rgba(255,255,255,0.08);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; line-height: 1.2; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+a { color: var(--accent); text-decoration: none; transition: color .2s; }
+a:hover { color: #7ab89a; }
+
+/* ── Site Nav ── */
+.site-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--rule);
+}
+.nav-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 2rem; gap: 1.5rem;
+}
+.nav-left, .nav-right { display: flex; align-items: center; gap: 1.5rem; }
+.nav-center a {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem; font-weight: 600; color: var(--text);
+  text-decoration: none; white-space: nowrap;
+}
+.nav-center a:hover { color: var(--gold); }
+.nav-link {
+  font-family: 'Inter', sans-serif; font-size: 0.82rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-dim); text-decoration: none; transition: color .2s;
+}
+.nav-link:hover { color: var(--text); }
+.nav-link.library { color: var(--accent); }
+.nav-link.library:hover { color: #7ab89a; }
+
+/* ── Nav Dropdown ── */
+.nav-dropdown { position: relative; }
+.nav-dropdown-trigger { cursor: pointer; }
+.nav-dropdown-trigger::after {
+  content: ''; display: inline-block; width: 5px; height: 5px;
+  border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg); margin-left: 5px; vertical-align: 2px;
+  transition: transform .2s;
+}
+.nav-dropdown:hover .nav-dropdown-trigger::after { transform: rotate(-135deg); }
+.nav-dropdown-menu {
+  position: absolute; top: calc(100% + 0.75rem); right: 0;
+  background: var(--bg-elevated); border: 1px solid var(--rule);
+  min-width: 220px; padding: 0.75rem 0;
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity .2s, visibility .2s, transform .2s;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+}
+.nav-dropdown:hover .nav-dropdown-menu {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+.dropdown-label {
+  font-family: 'Inter', sans-serif; font-size: 0.62rem; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--text-muted); padding: 0.4rem 1.25rem 0.6rem; border-bottom: 1px solid var(--rule);
+}
+.nav-dropdown-menu a {
+  display: block; padding: 0.6rem 1.25rem;
+  font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 400;
+  color: var(--text-dim); text-decoration: none; transition: background .15s, color .15s;
+}
+.nav-dropdown-menu a:hover { background: var(--accent-dim); color: var(--text); }
+
+/* ── Hero ── */
+.lecture-hero {
+  padding: 140px 0 5rem;
+  background: linear-gradient(170deg, var(--bg) 0%, #0f1218 50%, var(--bg) 100%);
+  position: relative; overflow: hidden;
+}
+.lecture-hero::before {
+  content: ''; position: absolute; top: -50%; right: -20%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(91,138,114,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.hero-eyebrow::after {
+  content: ''; display: inline-block; width: 3rem; height: 1px;
+  background: var(--accent); opacity: 0.5;
+}
+.lecture-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--text); margin-bottom: 1.25rem;
+}
+.lecture-hero h1 em { font-style: italic; color: var(--accent); }
+.hero-sub {
+  font-size: 1.1rem; font-weight: 300; color: var(--text-dim);
+  max-width: 640px; line-height: 1.8;
+  border-left: 2px solid var(--accent); padding-left: 1.25rem;
+}
+
+/* ── Video Section ── */
+.video-section { padding: 4rem 0; }
+.video-wrapper {
+  position: relative; width: 100%; max-width: 900px; margin: 0 auto;
+  padding-bottom: 50.625%; /* 16:9 */
+  background: var(--bg-card); border: 1px solid var(--rule);
+  overflow: hidden;
+}
+.video-wrapper iframe {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+}
+
+/* ── Content Sections ── */
+.content-section { padding: 4rem 0; }
+.content-section + .content-section { border-top: 1px solid var(--rule); }
+.section-label {
+  font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 0.75rem;
+}
+.content-section h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin-bottom: 1.5rem; color: var(--text);
+}
+.content-section p {
+  font-size: 1.05rem; color: var(--text-dim); line-height: 1.85;
+  max-width: 750px; margin-bottom: 1.25rem;
+}
+
+/* ── Info Cards ── */
+.info-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; margin-top: 2.5rem;
+}
+.info-card {
+  background: var(--bg-card); border: 1px solid var(--rule);
+  padding: 2rem; position: relative; transition: border-color .3s;
+}
+.info-card:hover { border-color: rgba(91,138,114,0.3); }
+.info-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; background: var(--accent); opacity: 0.6;
+}
+.card-icon {
+  width: 48px; height: 48px; margin-bottom: 1.25rem;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-dim); border-radius: 8px;
+}
+.card-icon svg { width: 24px; height: 24px; stroke: var(--accent); fill: none; stroke-width: 1.5; }
+.info-card h3 {
+  font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600;
+  color: var(--text); margin-bottom: 0.75rem;
+}
+.info-card p { font-size: 0.92rem; color: var(--text-dim); line-height: 1.7; }
+
+/* ── Logos Row ── */
+.logos-row {
+  display: flex; align-items: center; gap: 2.5rem;
+  padding: 3rem 0; border-top: 1px solid var(--rule);
+  flex-wrap: wrap; justify-content: center;
+}
+.logo-item {
+  display: flex; align-items: center; gap: 0.75rem;
+  opacity: 0.6; transition: opacity .3s;
+}
+.logo-item:hover { opacity: 1; }
+.logo-item img { height: 40px; width: auto; object-fit: contain; }
+.logo-item.book-cover img { height: 60px; border: 1px solid var(--rule); }
+.logo-label {
+  font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);
+}
+
+/* ── Footer ── */
+.lecture-footer {
+  padding: 2.5rem 0; border-top: 1px solid var(--rule);
+  text-align: center;
+}
+.lecture-footer p {
+  font-size: 0.8rem; color: var(--text-muted);
+}
+.lecture-footer a { color: var(--accent); }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .nav-inner { padding: 0.75rem 1rem; }
+  .nav-link { font-size: 0.72rem; }
+  .nav-center a { font-size: 1rem; }
+  .lecture-hero { padding: 110px 0 3rem; }
+  .info-grid { grid-template-columns: 1fr; }
+  .logos-row { gap: 1.5rem; }
+  .container { padding: 0 1.25rem; }
+}
+@media (max-width: 480px) {
+  .nav-left { display: none; }
+  .lecture-hero h1 { font-size: 1.6rem; }
+}
+  </style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="/GoogleScholar/" class="nav-link library">Library</a>
+    </div>
+    <div class="nav-center">
+      <a href="/">Dr Oliver Inderwildi</a>
+    </div>
+    <div class="nav-right">
+      <a href="/#series" class="nav-link">Articles</a>
+      <a href="/#books" class="nav-link">Books</a>
+      <div class="nav-dropdown">
+        <a class="nav-link nav-dropdown-trigger">In the Media</a>
+        <div class="nav-dropdown-menu">
+          <div class="dropdown-label">Media &amp; Appearances</div>
+          <a href="/Media/Interviews/">Interviews</a>
+          <a href="https://www.youtube.com/@oliverinderwildi" target="_blank" rel="noopener">Videos</a>
+          <a href="/Media/Lectures/FestivalCircularEconomy/">Lectures</a>
+        </div>
+      </div>
+      <a href="/#presence" class="nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="lecture-hero">
+  <div class="container">
+    <div class="hero-eyebrow">Lecture</div>
+    <h1>Closing the Loop: Harnessing AI for <em>Decarbonisation &amp; Circularity</em></h1>
+    <p class="hero-sub">
+      A lecture presented at the Festival of the Circular Economy — exploring how artificial intelligence
+      and circular economy principles can converge to accelerate the transition to net zero.
+    </p>
+  </div>
+</section>
+
+<!-- ── Video ── -->
+<section class="video-section">
+  <div class="container">
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/feZpdi6N9XA"
+        title="Intelligent Decarbonisation — Lecture at the Festival of the Circular Economy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ── About the Lecture ── -->
+<section class="content-section">
+  <div class="container">
+    <div class="section-label">About the Lecture</div>
+    <h2>AI Meets the Circular Economy</h2>
+    <p>
+      In this lecture, Dr Oliver Inderwildi presents the core thesis of his book
+      <em>Intelligent Decarbonisation</em>: that the pathway to net zero is not simply an engineering
+      problem but a systems challenge that requires the convergence of artificial intelligence,
+      industrial strategy, and circular economy thinking.
+    </p>
+    <p>
+      Drawing on case studies from energy, transport, and manufacturing, the talk explores how
+      machine learning and optimisation algorithms can unlock efficiencies that traditional
+      approaches miss — from predictive maintenance in renewable energy infrastructure to
+      intelligent material flow management in circular supply chains.
+    </p>
+  </div>
+</section>
+
+<!-- ── Info Cards ── -->
+<section class="content-section">
+  <div class="container">
+    <div class="info-grid">
+
+      <!-- Festival Card -->
+      <div class="info-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Festival of the Circular Economy</h3>
+        <p>
+          The Festival of the Circular Economy brings together business leaders, policy-makers,
+          and academics to advance the transition from linear to circular economic models.
+          It is a leading forum for sharing practical strategies to eliminate waste, keep
+          materials in use, and regenerate natural systems.
+        </p>
+      </div>
+
+      <!-- Book Card -->
+      <div class="info-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        </div>
+        <h3>Intelligent Decarbonisation</h3>
+        <p>
+          Published by Springer, <em>Intelligent Decarbonisation</em> examines how artificial
+          intelligence can be harnessed to design, optimise, and accelerate pathways to
+          net-zero emissions across industry, energy, and transport — bridging the gap between
+          climate ambition and technological capability.
+        </p>
+      </div>
+
+      <!-- Speaker Card -->
+      <div class="info-card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Dr Oliver Inderwildi</h3>
+        <p>
+          An expert in energy systems, AI, and sustainability strategy. Dr Inderwildi has
+          held senior roles across academia, industry, and government, advising on the
+          intersection of technology and decarbonisation policy.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Logos ── -->
+<section class="content-section">
+  <div class="container">
+    <div class="logos-row">
+      <a href="https://www.circulareconomyfestival.com" target="_blank" rel="noopener" class="logo-item">
+        <img src="festival_of_circular_economy_logo.svg" alt="Festival of the Circular Economy" style="height:50px;width:auto;"/>
+        <span class="logo-label">Festival of the<br>Circular Economy</span>
+      </a>
+      <a href="https://link.springer.com/book/10.1007/978-3-030-86215-2" target="_blank" rel="noopener" class="logo-item book-cover">
+        <img src="/images/Cover_IntelligentDecarbonisation.jpeg" alt="Intelligent Decarbonisation — Book Cover" />
+        <span class="logo-label">The Book</span>
+      </a>
+      <a href="https://link.springer.com" target="_blank" rel="noopener" class="logo-item">
+        <img src="/Media/icons/springer.png" alt="Springer" />
+        <span class="logo-label">Published by<br>Springer</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="lecture-footer">
+  <div class="container">
+    <p>&copy; 2025 Dr Oliver Inderwildi &middot; <a href="/">Home</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
